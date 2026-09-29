@@ -1,0 +1,1 @@
+ALTER TABLE `reader_profiles` ADD `role` text DEFAULT 'student' NOT NULL;

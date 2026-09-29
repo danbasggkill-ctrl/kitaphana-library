@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.dev.vars
+*.sqlite
+*.sqlite3
+*.db
+*.tar.gz
+.sites-runtime/

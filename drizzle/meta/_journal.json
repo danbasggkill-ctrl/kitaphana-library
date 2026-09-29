@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790662049120,
+      "tag": "0000_sparkling_human_robot",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790663245252,
+      "tag": "0001_tranquil_umar",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790676784207,
+      "tag": "0002_purple_thanos",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790677922569,
+      "tag": "0003_thin_centennial",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1790678859431,
+      "tag": "0004_sad_lucky_pierre",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1790679602625,
+      "tag": "0005_flippant_imperial_guard",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1790679665527,
+      "tag": "0006_bent_hitman",
+      "breakpoints": true
+    }
+  ]
+}

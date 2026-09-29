@@ -1,0 +1,1 @@
+ALTER TABLE `warning_receipts` ADD `applied` integer DEFAULT 0 NOT NULL;

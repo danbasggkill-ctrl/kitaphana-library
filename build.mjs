@@ -1,0 +1,4 @@
+import fs from 'node:fs';import path from 'node:path';
+const assets={};const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.webp':'image/webp','.svg':'image/svg+xml'};
+function collect(dir){for(const f of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,f.name);if(f.isDirectory()){collect(file);continue}const ext=path.extname(file);if(!types[ext])continue;const binary=ext==='.webp';assets['/'+path.relative('web',file)]={type:types[ext],base64:binary,body:fs.readFileSync(file,binary?'base64':'utf8')}}}collect('web');
+const questions=fs.readFileSync('src/questions.json','utf8');fs.rmSync('dist/index.html',{force:true});fs.mkdirSync('dist/server',{recursive:true});fs.writeFileSync('dist/server/index.js','const ASSETS='+JSON.stringify(assets)+';\nconst QUESTIONS='+questions+';\n'+fs.readFileSync('src/management.js','utf8')+'\n'+fs.readFileSync('src/worker.js','utf8'));
